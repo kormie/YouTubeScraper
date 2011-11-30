@@ -95,5 +95,7 @@ app.get('/nodetube', function(req, res){
 });
                                                                                                                                                                                                                                                              });
 
-app.listen(41887);
+var port = process.env.PORT || 3000;
+
+app.listen(port);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
